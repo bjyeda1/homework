@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+.sun{ width:100px; height:100px; background:#FF0; position:absolute; top:0; left:0; box-shadow:0 0 90px #FF9; border-radius:50%;}
+.div{ height:300px; line-height:300px; font-size:50px; text-align:center; font-weight:bold; text-shadow:0 0 0 #FF0; font-family:微软雅黑;}
+</style>
+<script>
+	window.onload=function(){
+		var oDiv=document.querySelector('.div');
+		var oSun=document.querySelector('.sun');
+		document.onmousemove=function(ev){
+			oSun.style.top=ev.pageY-oSun.offsetHeight/2+'px';
+			oSun.style.left=ev.pageX-oSun.offsetWidth/2+'px';
+		};
+	};
+</script>
+</head>
+
+<body>
+<div class="sun"></div>
+<div class="div">welcome to zhinengshe</div>
+</body>
+</html>
